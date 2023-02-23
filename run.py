@@ -77,20 +77,196 @@ def start():
 AREANAME = ""
 DESCRIPTION = "description"
 INFO = "inspect"
-SOLVED = False
+COMPLETE = False
 UP = "up", "north"
 DOWN = "down", "south"
 LEFT = "left", "west"
 RIGHT = "right", "east"
 
-completed_areas = {"home": {"bedroom": False, "atrium": False, "kitchen": False, "bathroom": False, "study": False, "yard": False},
-                "outside": {"yard": False, "road": False},
-                "forest": {"river": False, "cabin": False, "cave": False},
-                "castle": {"great hall": False, "living_quarters": False, "kitchens": False, "gaurds room": False, "dungeons": False,
-                           "stables": False, "courtyards": False, "Towers Tall": False, "gatehouse": False, "gardens": False}
-                }
+completed_areas = {"home": {"bedroom": False,
+                            "atrium": False,
+                            "kitchen": False,
+                            "bathroom": False,
+                            "study": False},
+                   "outside": {"yard": False,
+                               "road": False},
+                   "forest": {"river": False,
+                              "cabin": False,
+                              "cave": False},
+                   "castle": {"great hall": False,
+                              "living_quarters": False,
+                              "kitchen": False,
+                              "gaurds room": False,
+                              "dungeons": False,
+                              "stables": False,
+                              "courtyards": False,
+                              "tower": False,
+                              "gatehouse": False,
+                              "gardens": False}
+                   }
 
-areamap = {""}
+areamap = {completed_areas[home][bedroom]: {ZONENAME: ""
+                                            DESCRIPTION = "description"
+                                            INFO = "inspect"
+                                            COMPLETE = False
+                                            UP = "up", "north"
+                                            DOWN = "down", "south"
+                                            LEFT = "left", "west"
+                                            RIGHT = "right", "east"},
+           completed_areas[home][atrium]: {ZONENAME: ""
+                                           DESCRIPTION = "description"
+                                           INFO = "inspect"
+                                           COMPLETE = False
+                                           UP = "up", "north"
+                                           DOWN = "down", "south"
+                                           LEFT = "left", "west"
+                                           RIGHT = "right", "east"},
+           completed_areas[home][kitchen]: {ZONENAME: ""
+                                            DESCRIPTION = "description"
+                                            INFO = "inspect"
+                                            COMPLETE = False
+                                            UP = "up", "north"
+                                            DOWN = "down", "south"
+                                            LEFT = "left", "west"
+                                            RIGHT = "right", "east"},
+           completed_areas[home][bathroom]: {ZONENAME: ""
+                                             DESCRIPTION = "description"
+                                             INFO = "inspect"
+                                             COMPLETE = False
+                                             UP = "up", "north"
+                                             DOWN = "down", "south"
+                                             LEFT = "left", "west"
+                                             RIGHT = "right", "east"},
+           completed_areas[home][study]: {ZONENAME: ""
+                                          DESCRIPTION = "description"
+                                          INFO = "inspect"
+                                          COMPLETE = False
+                                          UP = "up", "north"
+                                          DOWN = "down", "south"
+                                          LEFT = "left", "west"
+                                          RIGHT = "right", "east"},
+           completed_areas[outside][yard]: {ZONENAME: ""
+                                            DESCRIPTION = "description"
+                                            INFO = "inspect"
+                                            COMPLETE = False
+                                            UP = "up", "north"
+                                            DOWN = "down", "south"
+                                            LEFT = "left", "west"
+                                            RIGHT = "right", "east"},
+           completed_areas[outside][road]: {ZONENAME: ""
+                                            DESCRIPTION = "description"
+                                            INFO = "inspect"
+                                            COMPLETE = False
+                                            UP = "up", "north"
+                                            DOWN = "down", "south"
+                                            LEFT = "left", "west"
+                                            RIGHT = "right", "east"},
+           completed_areas[forest][river]: {ZONENAME: ""
+                                            DESCRIPTION = "description"
+                                            INFO = "inspect"
+                                            COMPLETE = False
+                                            UP = "up", "north"
+                                            DOWN = "down", "south"
+                                            LEFT = "left", "west"
+                                            RIGHT = "right", "east"},
+           completed_areas[forest][cabin]: {ZONENAME: ""
+                                            DESCRIPTION = "description"
+                                            INFO = "inspect"
+                                            COMPLETE = False
+                                            UP = "up", "north"
+                                            DOWN = "down", "south"
+                                            LEFT = "left", "west"
+                                            RIGHT = "right", "east"},
+           completed_areas[forest][cave]: {ZONENAME: ""
+                                           DESCRIPTION = "description"
+                                           INFO = "inspect"
+                                           COMPLETE = False
+                                           UP = "up", "north"
+                                           DOWN = "down", "south"
+                                           LEFT = "left", "west"
+                                           RIGHT = "right", "east"},
+           completed_areas[castle][great hall]: {ZONENAME: ""
+                                                 DESCRIPTION = "description"
+                                                 INFO = "inspect"
+                                                 COMPLETE = False
+                                                 UP = "up", "north"
+                                                 DOWN = "down", "south"
+                                                 LEFT = "left", "west"
+                                                 RIGHT = "right", "east"},
+           completed_areas[castle][living quarters]: {ZONENAME: ""
+                                                      DESCRIPTION = "description"
+                                                      INFO = "inspect"
+                                                      COMPLETE = False
+                                                      UP = "up", "north"
+                                                      DOWN = "down", "south"
+                                                      LEFT = "left", "west"
+                                                      RIGHT = "right", "east"},
+           completed_areas[castle][kitchen]: {ZONENAME: ""
+                                              DESCRIPTION = "description"
+                                              INFO = "inspect"
+                                              COMPLETE = False
+                                              UP = "up", "north"
+                                              DOWN = "down", "south"
+                                              LEFT = "left", "west"
+                                              RIGHT = "right", "east"},
+           completed_areas[castle][gaurds room]: {ZONENAME: ""
+                                                  DESCRIPTION = "description"
+                                                  INFO = "inspect"
+                                                  COMPLETE = False
+                                                  UP = "up", "north"
+                                                  DOWN = "down", "south"
+                                                  LEFT = "left", "west"
+                                                  RIGHT = "right", "east"},
+           completed_areas[castle][dungeons]: {ZONENAME: ""
+                                               DESCRIPTION = "description"
+                                               INFO = "inspect"
+                                               COMPLETE = False
+                                               UP = "up", "north"
+                                               DOWN = "down", "south"
+                                               LEFT = "left", "west"
+                                               RIGHT = "right", "east"},
+           completed_areas[castle][stables]: {ZONENAME: ""
+                                              DESCRIPTION = "description"
+                                              INFO = "inspect"
+                                              COMPLETE = False
+                                              UP = "up", "north"
+                                              DOWN = "down", "south"
+                                              LEFT = "left", "west"
+                                              RIGHT = "right", "east"},
+           completed_areas[castle][courtyards]: {ZONENAME: ""
+                                                 DESCRIPTION = "description"
+                                                 INFO = "inspect"
+                                                 COMPLETE = False
+                                                 UP = "up", "north"
+                                                 DOWN = "down", "south"
+                                                 LEFT = "left", "west"
+                                                 RIGHT = "right", "east"},
+           completed_areas[castle][tower]: {ZONENAME: ""
+                                            DESCRIPTION = "description"
+                                            INFO = "inspect"
+                                            COMPLETE = False
+                                            UP = "up", "north"
+                                            DOWN = "down", "south"
+                                            LEFT = "left", "west"
+                                            RIGHT = "right", "east"},
+           completed_areas[castle][gatehouse]: {ZONENAME: ""
+                                                DESCRIPTION = "description"
+                                                INFO = "inspect"
+                                                COMPLETE = False
+                                                UP = "up", "north"
+                                                DOWN = "down", "south"
+                                                LEFT = "left", "west"
+                                                RIGHT = "right", "east"},
+           completed_areas[castle][gardens]: {ZONENAME: ""
+                                              DESCRIPTION = "description"
+                                              INFO = "inspect"
+                                              COMPLETE = False
+                                              UP = "up", "north"
+                                              DOWN = "down", "south"
+                                              LEFT = "left", "west"
+                                              RIGHT = "right", "east"}
+           }
+
 
 def main():
     """
