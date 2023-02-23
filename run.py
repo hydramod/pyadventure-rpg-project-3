@@ -16,7 +16,7 @@ class player_setup:
         self.health = 0
         self.mana = 0
         self.status = []
-        self.location = ""
+        self.location = "home"
 
 
 player = player_setup()
@@ -27,8 +27,8 @@ def title_menu():
     Controls the title menu screen options
     """
     options = {
-        "play": start(),
-        "help": help_menu(),
+        "play": start,
+        "help": help_menu,
         "quit": sys.exit,
     }
 
@@ -73,6 +73,24 @@ def start():
     Handles game functions
     """
 
+
+AREANAME = ""
+DESCRIPTION = "description"
+INFO = "inspect"
+SOLVED = False
+UP = "up", "north"
+DOWN = "down", "south"
+LEFT = "left", "west"
+RIGHT = "right", "east"
+
+completed_areas = {"home": {"bedroom": False, "atrium": False, "kitchen": False, "bathroom": False, "study": False, "yard": False},
+                "outside": {"yard": False, "road": False},
+                "forest": {"river": False, "cabin": False, "cave": False},
+                "castle": {"great hall": False, "living_quarters": False, "kitchens": False, "gaurds room": False, "dungeons": False,
+                           "stables": False, "courtyards": False, "Towers Tall": False, "gatehouse": False, "gardens": False}
+                }
+
+areamap = {""}
 
 def main():
     """
