@@ -16,6 +16,7 @@ class player_setup:
         self.health = 0
         self.mana = 0
         self.status = []
+        self.location = ""
 
 
 player = player_setup()
@@ -26,8 +27,8 @@ def title_menu():
     Controls the title menu screen options
     """
     options = {
-        "play": start,
-        "help": help,
+        "play": start(),
+        "help": help_menu(),
         "quit": sys.exit,
     }
 
@@ -44,29 +45,41 @@ def title_screen():
     Prints title screen
     """
     os.system("clear")
-    print("*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#")
-    print("*#   WELCOME TO PYADVENTURE RPG   #*")
-    print("*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#")
-    print("             <- Play ->             ")
-    print("             <- Help ->             ")
-    print("             <- Quit ->             ")
-    print("      Copyright 2023 Ali Saeid      ")
+    print("*#" * 21)
+    print("*#{:^39}#*".format("WELCOME TO PYADVENTURE RPG"))
+    print("*#" * 21)
+    print("{:^43}".format("<- Play ->"))
+    print("{:^43}".format("<- Help ->"))
+    print("{:^43}".format("<- Quit ->"))
+    print("{:^43}".format("Copyright 2023 Ali Saeid"))
+
     title_menu()
 
 
 def help_menu():
-    print("*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*")
-    print("*#     WELCOME TO PYADVENTURE RPG    #*")
-    print("*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*")
-    print("<- Use UP, DOWN, LEFT, RIGHT to move ->")
-    print("<-   Type your commands to do them   ->")
-    print("<-  Use examine to inspect something ->")
-    print("<-      Have fun and good luck       ->")
+    print("*#" * 21)
+    print("*#{:^39}*#".format("HELP"))
+    print("*#" * 21)
+    print("{:^43}".format("<- Use UP, DOWN, LEFT, RIGHT to move ->"))
+    print("{:^43}".format("<-   Type your commands to do them   ->"))
+    print("{:^43}".format("<-  Use examine to inspect something ->"))
+    print("{:^43}".format("<-      Have fun and good luck       ->"))
+
     title_menu()
+
+
+def start():
+    """
+    Handles game functions
+    """
 
 
 def main():
     """
-    Runs game functions
+    Runs main game functions
     """
     title_screen()
+    help_menu()
+
+
+main()
