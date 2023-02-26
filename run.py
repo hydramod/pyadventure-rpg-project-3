@@ -187,16 +187,27 @@ completed_areas = {
         "e11" : {"meadow": False}
     },
     "castle": {
-        "d1" : {"great hall": False},
-        "d2" : {"living quarters": False},
-        "d3" : {"kitchen": False},
+        "j8" : {"great hall": False},
+        "j9" : {"great hall": False},
+        "j7" : {"living quarters": False},
+        "k9" : {"kitchen": False},
         "d4" : {"guards room": False},
-        "d5" : {"dungeons": False},
-        "d6" : {"stables": False},
-        "d7" : {"courtyards": False},
-        "d8" : {"tower": False},
+        "k10" : {"dungeons": False},
+        "k11" : {"dungeons": False},
+        "h7" : {"stables": False},
+        "h8" : {"courtyards": False},
+        "h10" : {"courtyards": False},
+        "h11" : {"courtyards": False},
+        "i7" : {"gaurd tower": False},
+        "i8" : {"courtyards": False},
+        "i9" : {"courtyards": False},
+        "i10" : {"courtyards": False},
+        "i11" : {"courtyards": False},
+        "j10" : {"courtyards": False},
+        "j11" : {"tower": False},
         "d9" : {"gatehouse": False},
-        "d10" : {"gardens": False}
+        "k7" : {"gardens": False},
+        "k8" : {"gardens": False}
     }
 }
 
