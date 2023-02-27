@@ -111,14 +111,15 @@ RIGHT = "right", "east"
 
 completed_areas = {
     "home": {
-        "a1": {"bedroom": False},
-        "a2": {"atrium": False},
-        "b2": {"atrium": False},
-        "c2": {"atrium": False},
-        "d2": {"atrium": False},
-        "a3": {"kitchen": False},
-        "b1": {"bathroom": False},
-        "c1": {"study": False},
+        "a1": {"bedroom": False, "description": "A sparsely furnished room with a straw-stuffed mattress and a trunk. The common room is nearby."},
+        "a2": {"common room": False, "description": "A modest room with a fireplace, a wooden table, and a few chairs. The bedroom is nearby."},
+        "b2": {"common room": False, "description": "A modest room with a fireplace, a wooden table, and a few chairs. The bathroom is nearby."},
+        "c2": {"common room": False, "description": "A modest room with a fireplace, a wooden table, and a few chairs. The kitchen and garden is nearby."},
+        "d1": {"garden": False, "description": "A small garden with herbs, vegetables, and a few flowers. The kitchen is nearby."},
+        "d2": {"garden": False, "description": "A small garden with herbs, vegetables, and a few flowers. The common room is nearby."},
+        "d3": {"garden": False, "description": "A small garden with herbs, vegetables, and a few flowers. The animal pen is nearby."},
+        "c1": {"kitchen": False, "description": "A rustic kitchen with a wood-fired stove and simple utensils. The common room is nearby."},
+        "b1": {"bathroom": False, "description": "A simple privy with a wooden seat and bucket for waste. The common room is near by."},
         "a3": {"yard": False},
         "a4": {"yard": False},
         "a5": {"yard": False},
@@ -131,7 +132,6 @@ completed_areas = {
         "e3": {"yard": False},
         "e4": {"yard": False},
         "e5": {"yard": False},
-        "d3": {"garden": False},
         "d4": {"garden": False},
         "d5": {"garden": False}
     },
